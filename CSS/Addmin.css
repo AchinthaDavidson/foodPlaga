@@ -1,0 +1,122 @@
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.6em 0.6em -0.5em #ffa260;
+  transform: translateY(-0.25em);
+  border-color: #ffa260;
+}
+
+
+body{
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #212121;
+  color: white;
+  font-family: Verdana, sans-serif;
+  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+
+.logo{
+  color: white;
+    display:inline-block;
+    font-size: 40px;
+    font-family: 'Dancing Script',cursive;
+    font: bold;
+
+}
+input{
+    width:20%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    height: 30px;
+}
+
+button {
+  color: white;
+  transition: 0.25s;
+  background-color: orange;
+  border: 2px solid;
+  border-color: #fc6b03;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.5em 2em;
+  border-radius: 10px;
+
+    }
+.send{
+margin-left: 31%;
+margin-top: 10px;
+}
+.overlay {
+color: black;
+ position:fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background: rgba(0, 0, 0, 0.7);
+ transition: opacity 500ms;
+ visibility: hidden;
+ opacity: 0;
+}
+.overlay:target {
+ visibility: visible;
+ opacity: 1;
+}
+
+.popup {
+ margin: 70px auto;
+ padding: 20px;
+ background: #fff;
+ border-radius: 5px;
+ width: 30%;
+ position: relative;
+ transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+ margin-top: 0;
+ color: #333;
+ font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+ position: absolute;
+ top: 20px;
+ right: 30px;
+ transition: all 200ms;
+ font-size: 30px;
+ font-weight: bold;
+ text-decoration: none;
+ color: #333;
+}
+.popup .close:hover {
+ color: #06D85F;
+}
+.popup .content {
+ max-height: 30%;
+ overflow: auto;
+}
+
+
+.log_but{
+
+ background-color: white;
+ border: none;
+ color:orange;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+
+
+}
+.log_but:hover{
+ background-color: orange;
+ color: white;
+}

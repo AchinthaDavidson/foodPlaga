@@ -1,0 +1,72 @@
+h3,h2{text-align:left ;font-family: "arial";color: black;}
+p{color:black; font-size: 12pt;}
+
+table {border: 10px ;width:85%;  }
+th {text-align: center;}
+
+image { align-items: left; width: 25px;  }
+
+
+
+.container {
+            width: 30%;
+            background-image: url("../images/pay.jpg");
+            border:1px solid;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+
+           }
+.container h1 {
+              text-align: center;
+              }
+
+.first-row {
+             display: flex;
+           }
+
+.Owner {
+      width:100%;
+      margin-right: 40px;
+       }
+.card {
+    max-width: fit-content;
+}
+
+.input-field {
+ border:1px solid #999;
+}
+
+.input-field input{
+    width:100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.selection select{
+    padding: 10px 20px;
+}
+
+a{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 12px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: green;
+}

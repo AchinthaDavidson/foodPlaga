@@ -1,0 +1,50 @@
+body{
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 8%;
+  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+
+
+
+
+
+}
+table{
+width: 100%;
+border-spacing:30px;
+}
+td{
+background-color:#17161e;
+border-radius: 20px;
+/* box-shadow: 1px 3px 6px 10px #0c0c0e; */
+opacity:0.9;
+}
+img{
+border-radius: 20px 10px 0px 0px;
+/* opacity:0.9; */
+}
+
+.name{
+font-size: 25px;
+font-family: 'Montserrat', sans-serif;
+margin: 5px;
+color:white;
+}
+.cart{
+float: right;
+margin-right: 10px;
+margin-bottom: 10px;
+background-color: #17161e;
+border: none;
+}
+.dis{
+color: #b3aeab;
+margin: 5px;
+
+font-family: 'Comfortaa', cursive;
+font-size: 12px;
+}

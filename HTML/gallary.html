@@ -1,0 +1,321 @@
+<style>
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(5, 18vh);
+  grid-template-columns: repeat(2, 45vw);
+  transition: all 0.3s cubic-bezier(0.5, 0.8, 0.5, 0.2);
+  background-color: #141414;
+  border-radius: 20px;
+  padding: 0.25em;
+  cursor: cursor;
+
+}
+@media (min-width: 40em) {
+  .gallery {
+    grid-template-rows: repeat(2, 20vh);
+  }
+}
+@media (min-width: 10em) and (orientation: landscape) {
+  .gallery {
+    grid-template-columns: repeat(5, 18vw);
+    grid-template-rows: repeat(2, 45vh);
+  }
+}
+@media (min-width: 60em) {
+  .gallery3 {
+    grid-template-columns: repeat(10, 8vw);
+    grid-template-rows: 25vh;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(5, 18vh);
+  grid-template-columns: repeat(2, 45vw);
+  transition: all 0.3s cubic-bezier(0.5, 0.8, 0.5, 0.2);
+  background-color: #141414;
+  border-radius: 10px;
+  padding: 0.25em;
+  cursor: cursor;
+}
+@media (min-width: 40em) {
+  .gallery {
+    grid-template-rows: repeat(2, 20vh);
+  }
+}
+@media (min-width: 10em) and (orientation: landscape) {
+  .gallery {
+    grid-template-columns: repeat(5, 18vw);
+    grid-template-rows: repeat(2, 45vh);
+  }
+}
+@media (min-width: 60em) {
+  .gallery {
+    grid-template-columns: repeat(10, 8vw);
+    grid-template-rows: 25vh;
+  }
+}
+
+img {
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+  left: 0;
+  top: 0;
+  transition: all 0.15s cubic-bezier(0.3, 0.1, 0.3, 0.85);
+  position: relative;
+  box-shadow: 0 0 0 #0000;
+  opacity: 0.67;
+  filter: sepia(80%) hue-rotate(180deg);
+}
+img:first-child {
+  border-radius: 0px 0px 0 0;
+}
+img:last-child {
+  border-radius: 0 0 0px 0px;
+}
+@media (min-width: 40em) and (max-width: 59.99em) {
+  img:first-child {
+    border-radius: 0px 0 0 0;
+  }
+  img:nth-child(5) {
+    border-radius: 0 0px 0 0;
+  }
+  img:nth-child(6) {
+    border-radius: 0 0 0px 0;
+  }
+  img:last-child {
+    border-radius: 0 0 0 0px;
+  }
+}
+@media (min-width: 60em) {
+  img:first-child {
+    border-radius: 0px 0 0 0px;
+  }
+  img:last-child {
+    border-radius: 0 0px 0px 0;
+  }
+}
+img:hover {
+  opacity: 1;
+  z-index: 1;
+  box-shadow: 1em 1em 1em #0004;
+  transition: all 0.3s cubic-bezier(0.3, 0.1, 0.3, 0.85);
+  filter: sepia(0%) hue-rotate(0deg);
+  border-radius: 20px;
+  width: 50%;
+  height: 50%;
+  left: -100%;
+  top: -100%;
+}
+@media (min-width: 40em) {
+  img:hover {
+    width: 250%;
+    height: 500%;
+    left: -75%;
+    top: -200%;
+  }
+}
+@media (min-width: 10em) and (orientation: landscape) {
+  img:hover {
+    width: 250%;
+    height: 200%;
+  }
+}
+@media (min-width: 40em) and (orientation: portrait) {
+  img:hover {
+    width: 300%;
+    height: 300%;
+    left: -100%;
+    top: -100%;
+  }
+}
+@media (min-width: 60em) {
+  img:hover {
+    width: 350%;
+    height: 150%;
+    left: -75%;
+    top: -25%;
+  }
+  img:hover ~ img {
+    left: 175%;
+  }
+}
+@media (min-width: 60em) and (orientation: landscape) {
+  img:hover {
+    width: 300%;
+    height: 300%;
+    left: -75%;
+    top: -100%;
+  }
+  img:hover ~ img {
+    left: 100%;
+  }
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.15s cubic-bezier(0.3, 0.1, 0.3, 0.85);
+  position: relative;
+  box-shadow: 0 0 0 #0000;
+  opacity: 0.67;
+  filter: sepia(80%) hue-rotate(180deg);
+}
+img:first-child {
+  border-radius: 20px 20px 0 0;
+}
+img:last-child {
+  border-radius: 0 0 20px 20px;
+}
+@media (min-width: 40em) and (max-width: 59.99em) {
+  img:first-child {
+    border-radius: 20px 0 0 0;
+  }
+  img:nth-child(5) {
+    border-radius: 0 20px 0 0;
+  }
+  img:nth-child(6) {
+    border-radius: 0 0 20px 0;
+  }
+  img:last-child {
+    border-radius: 0 0 0 20px;
+  }
+}
+@media (min-width: 60em) {
+  img:first-child {
+    border-radius: 20px 0 0 20px;
+  }
+  img:last-child {
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+
+img:hover {
+  opacity: 1;
+  z-index: 1;
+  box-shadow: 3em 3em 3em #0004;
+  transition: all 0.3s cubic-bezier(0.3, 0.1, 0.3, 0.85);
+  filter: sepia(0%) hue-rotate(0deg);
+  border-radius: 20px;
+  width: 50%;
+  height: 50%;
+  left: -100%;
+  top: -100%;
+
+}
+@media (min-width: 40em) {
+  img:hover {
+    width: 250%;
+    height: 500%;
+    left: -75%;
+    top: -200%;
+  }
+}
+@media (min-width: 10em) and (orientation: landscape) {
+  img:hover {
+    width: 250%;
+    height: 200%;
+  }
+}
+@media (min-width: 40em) and (orientation: portrait) {
+  img:hover {
+    width: 200%;
+    height: 200%;
+    left: -100%;
+    top: -100%;
+  }
+}
+@media (min-width: 40em) {
+  img:hover {
+    width: 350%;
+    height: 150%;
+    left: -75%;
+    top: -25%;
+  }
+  img:hover ~ img {
+    left: 175%;
+  }
+}
+@media (min-width: 40em) and (orientation: landscape) {
+  img:hover {
+    width: 300%;
+    height: 300%;
+    left: -75%;
+    top: -100%;
+  }
+  img:hover ~ img {
+    left: 100%;
+  }
+}
+
+1
+</style>
+
+<body background="../images\Gallary/BG.jpg">
+<div class="gallery">
+  <img src="../images/Gallary/12.jpg">
+  <img src="../images/Gallary/46.jpg">
+  <img src="../images/Gallary/3.jpg">
+  <img src="../images/Gallary/11.jpg">
+  <img src="../images/Gallary/18.jpg">
+  <img src="../images/Gallary/6.jpeg">
+  <img src="../images/Gallary/7.jpg">
+  <img src="../images/Gallary/8.jpg">
+  <!-- <img src="../images/Gallary/9.jpg">
+  <img src="../images/Gallary/28.jpg"> -->
+
+</div>
+
+<div class="gallery">
+  <img src="../images/Gallary/15.jpg">
+  <img src="../images/Gallary/14.jpg">
+  <img src="../images/Gallary/13.jpg">
+  <img src="../images/Gallary/17.jpg">
+  <img src="../images/Gallary/22.png">
+  <img src="../images/Gallary/26.jpg">
+  <img src="../images/Gallary/35.jpg">
+  <img src="../images/Gallary/41.jpg">
+  <img src="../images/Gallary/14.jpg">
+  <img src="../images/Gallary/21.jpeg">
+
+</div>
+
+<!-- <div class="gallery">
+  <img src="../images/Gallary/25.jpg">
+  <img src="../images/Gallary/31.jpg">
+  <img src="../images/Gallary/32.jpg">
+  <img src="../images/Gallary/20.jpeg">
+  <img src="../images/Gallary/29.jpeg">
+  <img src="../images/Gallary/36.jpg">
+  <img src="../images/Gallary/45.jpg">
+  <img src="../images/Gallary/19.jpg">
+  <img src="../images/Gallary/25.jpg">
+  <img src="../images/Gallary/41.jpg">
+
+</div>
+
+<div class="gallery">
+  <img src="../images/Gallary/16.jpg">
+  <img src="../images/Gallary/4.jpg">
+  <img src="../images/Gallary/37.jpg">
+  <img src="../images/Gallary/27.jpg">
+  <img src="../images/Gallary/40.jpg">
+  <img src="../images/Gallary/30.jpg">
+  <img src="../images/Gallary/42.jpg">
+  <img src="../images/Gallary/37.jpg">
+  <img src="../images/Gallary/34.jpg">
+  <img src="../images/Gallary/47.jpg">
+
+</div> -->
